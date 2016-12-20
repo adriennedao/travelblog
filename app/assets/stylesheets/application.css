@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+ .navbar {
+   background: #ff4b1f; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to left, #ff4b1f , #ff9068); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to left, #ff4b1f , #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ body {
+
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: 35px;
+
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-size: 20px;
+}
+.navbar-default .navbar-brand:hover {
+  color: white;
+  opacity: 0.75;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.75;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #00c6ff;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  .navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+      background-color: #00c6ff;
+  }
+}
