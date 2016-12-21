@@ -55,12 +55,29 @@
   &:hover, &:focus {
     background-color: #00c6ff;
   }
-  .navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
     background-color: white;
   }
-  .navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle {
     border: 2px solid white;
     &:hover, &:focus {
       background-color: #00c6ff;
   }
+}
+.jumbotron {
+  background-color:#E0EAFC ;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+button.btn-default {
+  color: #00c6ff;
+}
+div.row {
+  background-color: #E0EAFC;
+}
+h1, h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: red;
 }

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Travelblog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
@@ -9,8 +10,8 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class='container'>
         <div class="navbar-header">
@@ -20,19 +21,31 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to "/", class: "navbar-brand" do %><i class="fa fa-group"></i>TravelBlog</a>
+          <%= link_to "/", class: "navbar-brand" do %>
+          <i class="fa fa-group"></i>
+          TravelBlog
           <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Post Listings", "/post listings"%></li>
-            <li><%= link_to "Explore Cities","/explore cities"%></li>
-            <li><%= link_to "ThingsToDo", "/thingstodo"%></li>
+            <li><%= link_to "Posts", posts_path%></li>
+            <li><%= link_to "Destinations","/destinations"%></li>
+            <li><%= link_to "About","/about"%></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
 
+      <div class="col-sm-12">
+        <div class="jumbotron">
+          <div class="container">
+            <h3>TravelBlog</h3>
+            <p>TravelBlog is an online platform where travelers can blog their experiences.</p>
+
+            <%= yield %>
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>

@@ -1,11 +1,24 @@
+  <% @posts.each do |post| %>
 
-
-<h1>Listing Posts</h1>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <% end %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+      <tbody>
+          <tr>
+            <td><%= post.title %></td>
+            <td><%= post.body %></td>
+            <td><%= post.created_at.to_date %></td>
+            <td><%= link_to 'New', post, class: 'btn btn-info' %></td>
+            <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
+            <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-warning' %></td>
+          </tr>
+      </tbody>
+    </table>
+  <% end %>
