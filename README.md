@@ -1,6 +1,6 @@
 # README
 
-# TravelBlog app built for GA WDI Project 4
+## TravelBlog app built for GA WDI Project 4
 
 
 ## Introduction:
@@ -16,7 +16,7 @@
 ## User Stories:
 
   - Its functionality is to have the users be able to blog their travels' experiences and the
-    ability to update and delete. 
+    ability to update and delete.
 
 ## Technologies Used:
 
@@ -26,9 +26,9 @@
 
   - Rails version 5.0.0.1
 
-  - bootstrap-sass
+  - Bootstrap-sass
 
-  - font-awesome-sass
+  - Font-awesome-sass
 
   - Hirb
 
