@@ -1,6 +1,4 @@
   <% @posts.each do |post| %>
-
-  <% end %>
   <table class="table">
     <thead>
       <tr>
@@ -15,10 +13,11 @@
             <td><%= post.title %></td>
             <td><%= post.body %></td>
             <td><%= post.created_at.to_date %></td>
-            <td><%= link_to 'New', post, class: 'btn btn-info' %></td>
             <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
             <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-warning' %></td>
+            <td><%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
           </tr>
       </tbody>
     </table>
+
   <% end %>
