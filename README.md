@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# TravelBlog app built for GA WDI Project 4
 
-Things you may want to cover:
 
-* Ruby version
+## Introduction:
 
-* System dependencies
+  - TravelBlog is an app where travelers can blog their experiences.
 
-* Configuration
+  - A single model app
 
-* Database creation
+  - Restful routes
 
-* Database initialization
+  - 3 CRUD functionalities
 
-* How to run the test suite
+## User Stories:
 
-* Services (job queues, cache servers, search engines, etc.)
+  - Its functionality is to have the users be able to blog their travels' experiences and the
+    ability to update and delete. 
 
-* Deployment instructions
+## Technologies Used:
 
-* ...
+  - Ruby 2.3.1p112
+
+  - Postgresql
+
+  - Rails version 5.0.0.1
+
+  - bootstrap-sass
+
+  - font-awesome-sass
+
+  - Hirb
+
+  - Postman
+
+
+## Future Improvement:
+
+  - Work on adding more features
+
+  - Add users
