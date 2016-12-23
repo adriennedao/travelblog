@@ -30,15 +30,23 @@
   background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+body {
+  font-family: "Helverica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
 
+}
 .navbar-default .navbar-brand {
   color: white;
   font-size: 35px;
+  font-weight: bolder;
 
 }
 .navbar-default .navbar-nav > li > a {
   color: white;
   font-size: 20px;
+  font-weight: bolder;
 }
 .navbar-default .navbar-brand:hover {
   color: white;
